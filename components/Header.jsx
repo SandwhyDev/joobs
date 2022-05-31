@@ -5,6 +5,8 @@ const Header = () => {
   return (
     <div>
       <Head>
+        <title>Joobs</title>
+        <link rel="icon" href="Logo.png" />
         <link
           href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
           rel="stylesheet"
