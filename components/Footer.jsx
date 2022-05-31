@@ -55,11 +55,11 @@ const Footer = () => {
               Address
             </h1>
             <p className="font-poppins text-[16px] font-medium capitalize">
-              hello@jobbb.com
+              sandyiswahyudi@jobbb.com
             </p>
 
             <p className="font-poppins text-[16px] font-medium capitalize  ">
-              JL. Setiabudhi No. 193 Sukasari, Bandung West Java, Indonesia
+              JL. bbd raya Blok B1 No. 91 mekarsari, depok West Java, Indonesia
             </p>
 
             {/* <p className="font-poppins text-[16px] font-medium capitalize">
