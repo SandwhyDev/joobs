@@ -7,7 +7,7 @@ import { FiSearch } from "react-icons/fi";
 import { GoLocation } from "react-icons/go";
 import Location from "../assets/Location.svg";
 import Search from "../assets/Search.svg";
-import ImageHero from "../assets/image-herro.png";
+import ImageHero from "../assets/Image-herro.png";
 import Slack from "../assets/slack.png";
 import Microsoft from "../assets/microsoft.png";
 import Google from "../assets/google.png";
