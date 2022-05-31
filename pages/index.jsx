@@ -1,23 +1,16 @@
-import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
-import { FiSearch } from "react-icons/fi";
-import { GoLocation } from "react-icons/go";
-import Location from "../assets/Location.svg";
-import Search from "../assets/Search.svg";
 import ImageHero from "../assets/Image-herro.png";
-import Slack from "../assets/slack.png";
-import Microsoft from "../assets/microsoft.png";
-import Google from "../assets/google.png";
-import Airbnb from "../assets/airbnb.png";
 import ImageHero2 from "../assets/ImageHero2.png";
 import ImageHero3 from "../assets/ImageHero3.png";
-import Subscribe from "../assets/Subcribe.png";
-import Pattern from "../assets/Pattern.svg";
-import CardCategories from "../components/CardCategories";
 import Footer from "../components/Footer";
+import CardEmail from "../components/CardEmail";
+import SearchInput from "../components/SearchInput";
+import CardWorks from "../components/CardWorks";
+import ContCardCategories from "../components/ContCardCategories";
+import CardSponsor from "../components/CardSponsor";
 export default function App() {
   return (
     <div className="w-screen min-h-screen flex flex-col  ">
@@ -44,30 +37,7 @@ export default function App() {
                 <h1>Frontend</h1>
               </div>
 
-              <div className="w-full flex bg-white rounded-full h-[60px] items-center p-6 gap-5">
-                <div className="flex items-center gap-4 ">
-                  <span className="w-[30px] h-[30px] ">
-                    <Image src={Search} />
-                  </span>
-                  <input
-                    type="text"
-                    className="outline-none  py-1 font-poppins text-[18px] font-light"
-                    placeholder="Job Title or keyword"
-                  />
-                </div>
-                <div className="h-[42px] w-[4px] rounded-full bg-gray-300 "></div>
-                <span className="">
-                  <Image src={Location} />
-                </span>
-                <input
-                  type="text"
-                  className="outline-none  py-1 font-poppins text-[18px] font-light"
-                  placeholder="Depok, Jawa Barat"
-                />
-                <button className="p-2 w-[150px] rounded-full bg-orange-500 font-poppins text-[18px] text-white font-bold">
-                  <h1>Search</h1>
-                </button>
-              </div>
+              <SearchInput />
             </div>
           </div>
           <div className="w-full h-full  mr-3 ">
@@ -85,12 +55,7 @@ export default function App() {
             Join Most Well Known{" "}
             <span className="text-[#F2994A]">Companies</span> Around The World
           </h1>
-          <div className="w-full h-full  flex gap-4 items-center justify-between  ">
-            <Image src={Slack} />
-            <Image src={Microsoft} />
-            <Image src={Google} />
-            <Image src={Airbnb} />
-          </div>
+          <CardSponsor />
         </div>
       </div>
 
@@ -106,14 +71,7 @@ export default function App() {
         </div>
 
         <div className="w-full h-full  flex flex-wrap gap-5 justify-between">
-          <CardCategories />
-          <CardCategories bg="true" />
-          <CardCategories />
-          <CardCategories />
-          <CardCategories />
-          <CardCategories />
-          <CardCategories />
-          <CardCategories />
+          <ContCardCategories />
         </div>
       </div>
 
@@ -153,37 +111,7 @@ export default function App() {
             We will help you to find your dream job easily, let us help you
             manage everything you need
           </p>
-
-          <div className="w-[558px] bg-white rounded-[31px] flex flex-col -gap-[120px] ">
-            <div className="group flex flex-col p-5">
-              <p className="font-poppins  text-[20px] font-bold text-[#F2994A]">
-                Easy to uload Your Best CV and Portofolio
-              </p>
-              <p className="font-poppins  text-[20px] font-light">
-                You can upload your resume, CV, and portofolio directly to Jobbb
-              </p>
-            </div>
-
-            <div className="group flex flex-col  p-5 -mt-6 ">
-              <p className="font-poppins  text-[20px] font-bold text-[#F2994A]">
-                You Will Be Notified With All Updates
-              </p>
-              <p className="font-poppins  text-[20px] font-light">
-                Get notified about new job vacancies. scheduled interview and
-                job application
-              </p>
-            </div>
-
-            <div className="group flex flex-col  p-5 -mt-6 ">
-              <p className="font-poppins  text-[20px] font-bold text-[#F2994A]">
-                Apply for your dream job from the best company
-              </p>
-              <p className="font-poppins  text-[20px] font-light">
-                We will provide recommendations for your choice companies from
-                all over the world
-              </p>
-            </div>
-          </div>
+          <CardWorks />
         </div>
 
         <div className="w-full h-[600px]    flex items-center justify-center ">
@@ -193,28 +121,7 @@ export default function App() {
 
       {/* PAGE 6  */}
       <div className="w-screen h-auto bg-[#F2994A]/25 px-10 py-20 ">
-        <div className="w-full h-auto bg-[#F2994A] rounded-[84.1px] items-center justify-center flex  ">
-          <h1 className="font-poppins text-[46px] font-semibol text-white w-[60%] pl-14">
-            Never Want to Miss Any Job News?
-          </h1>
-          <div className="w-[100%] h-full flex flex-col relative  ">
-            <Image src={Pattern} />
-
-            <div className="bg-white w-[80%] h-20 rounded-full flex gap-4 px-10 py-5 absolute top-[45%] right-[90px]">
-              <input
-                type="text"
-                name="email"
-                id="email"
-                className="outline-none  w-[60%]   font-poppins text-[21px] font-light"
-                placeholder="Enter your email address here..."
-              />
-              <div className="h-[42px] w-[4px] rounded-full bg-gray-300 "></div>
-              <button className=" w-[200px] rounded-full bg-[#F2994A] font-poppins text-[18px] text-white font-bold">
-                <h1>Search</h1>
-              </button>
-            </div>
-          </div>
-        </div>
+        <CardEmail />
       </div>
 
       {/* FOOTER  */}
